@@ -10,7 +10,9 @@ height: 200px;
 h1, h2{
 text-align: center;
 font-family: 'Alegreya Sans SC', sans-serif;
-font-weight: 400;
+font-weight: lighter;
+text-transform: uppercase;
+letter-spacing: 2px;
 
 }
 
@@ -25,6 +27,7 @@ nav ul{
   border: 1px solid;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 100px;
 
 }
 
@@ -37,12 +40,50 @@ nav li{
 
   display: flex;
   margin: auto;
-    width: 40%;
+  width: 40%;
 }
 
 .liste1{
 
 padding-right: 16rem;
+
+}
+
+.liste1 li, .liste2 li{
+
+  padding: 10px;
+}
+
+p{
+
+  padding:20px;
+
+}
+
+.submit{
+
+  padding: 7px;
+  width: 200px;
+  background-color: transparent;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  border:1px solid black;
+
+}
+
+.submit:hover{
+
+background-color: black;
+color: white;
+
+}
+
+input{
+
+  padding: 8px;
+  width: 210px;
+  text-align: center;
 }
 
 section, footer{
@@ -62,6 +103,52 @@ a{
 section{
 
   height: 100vh;
+
+
+}
+
+.voirplus{
+
+  text-align:right;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+img{
+
+  float: left;
+  width: 20%;
+  margin-left: 250px;
+  margin-top: 80px;
+
+
+}
+
+figure:hover figcaption{
+
+  opacity:1;
+  transform:translate(0);
+}
+
+
+figcaption{
+  position:absolute;
+  color:black;
+  opacity:0;
+  transition:1s;
+  transform:translateY(5px);
+  font-size: 40px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 3px;
+}
+
+
+figure:hover img{
+  transition:1s;
+  opacity:0.6;
+  transform: scale(1.25);
 
 }
 
