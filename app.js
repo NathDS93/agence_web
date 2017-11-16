@@ -18,7 +18,18 @@ var ajouterProduit = function() {
 
 };
 
+function randomNumber() {
+  var min = 1;
+  var max = 9999999999;
+  var num = Math.floor(Math.random() * (max - min + 1)) + min;
+  var timeNow = new Date().getTime();
+  document.getElementById('ajout_ref_prod').value = num + timeNow;
+}
 
+window.onload = function init(){
+
+  randomNumber();
+}
 
   return {
     ajouterProduit: ajouterProduit
